@@ -1,0 +1,700 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppis', Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    background-color: #192374;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:  #ffffaa;
+    
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: #a39b6b;
+}
+
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+header{
+    position: relative;
+}
+
+header  button:hover{
+    background-color: #346ec5;
+}
+header  button:active{
+    background-color: #05295f;
+}
+
+header .nav-link{
+    color: #000;
+    transition: 0.10s all linear;
+}
+
+header .nav-link:hover{
+    color: #192374;
+    font-weight: bolder;
+}
+
+header .nav-link:active{
+    color: #ffff00;
+}
+
+.logo-opus{
+    width: 50px;
+    transform: scale(1.4);
+    
+}
+
+.box-slider{
+    width: 100%;
+    height: 30rem;
+    background-color: #192374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px #000
+}
+
+
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    
+}
+
+.slides input{
+    display: none;
+}
+
+
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    
+}
+
+
+
+.manual-navigation{
+    position: absolute;
+    width: 60%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.manual-btn{
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/*Sera aplicado em todos manual-btn, (Menos no ultimo filho (Last-child))*/
+.manual-btn:not(:last-child){
+    margin-right: 2rem;
+}
+
+.manual-btn:hover{
+    background-color: #ffff00fd;
+}
+
+/*Quando meu radio1 estiver ticado, vai ser estilizado aqui*/
+#radio1:checked ~ .first{
+    margin-left: 0;
+    
+}
+
+/*Quando meu radio2 estiver ticado, vai ser estilizado aqui*/
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    
+}
+
+/*Quando meu radio3 estiver ticado, vai ser estilizado aqui*/
+#radio3:checked ~ .first{
+    margin-left: -50%;
+    
+}
+
+/*Quando meu radio4 estiver ticado, vai ser estilizado aqui*/
+#radio4:checked ~ .first{
+    margin-left: -75%;
+    
+}
+
+.navigation-auto div{
+    border: solid 1px;
+    background-color: #192374;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 60%;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 2rem;
+}
+
+/*Quando um radio estiver selecionado, definimos que ele tera um background color*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #f3f4f5;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #f3f4f5;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #f3f4f5;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #f3f4f5;
+}
+
+
+
+main{
+    width: 100%;
+    height: 78rem;
+    margin-top: 2rem;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px 0 15px 11rem;
+    
+    
+    
+}
+
+.box-text{
+    letter-spacing: .05rem ;
+    width:min-content ;
+    width: 30rem;
+    
+    
+}
+
+.box-text > p{
+    letter-spacing: .05rem ;
+    width:min-content ;
+    width: 30rem;
+    
+    
+}
+.box-text h1 span{
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    color: #192374;
+}
+
+.box-text h2{
+    font-size: 20pt;
+    color: #192374;;
+}
+
+.box-card{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    place-content: start center;
+    
+    
+    
+}
+.box-card  .cards-img:nth-child(1){
+    background-image: url(./assets/images/Psicologia.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+
+.box-card  .cards:nth-child(2) .cards-img{
+    background-image: url(./assets/images/Fonoaudiologia.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+
+.box-card .cards:nth-child(3) .cards-img{
+    background-image: url(./assets/images/Terapia.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+
+.box-card .cards:nth-child(4) .cards-img{
+    background-image: url(./assets/images/Psicopedagogia.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+
+.box-card .cards:nth-child(5) .cards-img{
+    background-image: url(./assets/images/acompanhamento.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+.box-card .cards:nth-child(6) .cards-img{
+    background-image: url(./assets/images/avaliação.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+.box-card .cards:nth-child(7) .cards-img{
+    background-image: url(./assets/images/breve.jfif);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-position: center;
+}
+
+.cards{
+    width: 300px;
+    height: 380px;
+    background-color: #feffcd;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 5px #3b3b3b75;
+    transition: 1s all;
+}
+
+.cards:hover{
+    box-shadow: none;
+}
+
+.cards img{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.card-ciclo{
+    width: 100%;
+    height: 50px;
+    background-color: #feffcd;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    margin-top: -22px;
+    position: relative;
+    padding: .20rem;
+}
+
+.card-ciclo ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+.carrosel-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+main h2 {
+    font-size: 13pt;
+    color: #192374;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociais img {
+    width: 20px;
+    height: 20px;
+}
+
+.direitos-autorais {
+    margin-top: 20px;
+}
+
+
+
+.box_Servi{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+.box_Servi .box1{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box_Servi h2{
+    color: #192374;
+}
+
+.text h2{
+    color: #192374;
+}
+
+.service{
+    padding: .30rem;
+    background: #192374;
+    width: min-content;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15pt;
+}
+.box1 div{
+    height: 300px;
+    width: 250px;
+    
+    
+}
+.box1 div:hover{
+    margin-bottom: 1rem;
+}
+
+
+.box1 div:nth-child(1){
+    background-image: url(./assets/images/Triagem.jfif);
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s linear;
+    padding: .20rem;
+}
+
+
+.box1 div:nth-child(2){
+    background-image: url(./assets/images/avaliação-comportamental.jfif);
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s linear;
+    padding: .20rem;
+}
+.box1 div:nth-child(3){
+    background-image: url(./assets/images/Intervenção.jfif);
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s linear;
+    padding: .20rem;
+}
+
+.box1 div:nth-child(4){
+    background-image: url(./assets/images/Devolutiva.jfif);
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s linear;
+    padding: .20rem;
+    
+}
+
+.box1 div:hover{
+    background-blend-mode: soft-light;
+    background-color: #000000b7;
+    
+}
+
+.box1 .div-img > span{
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.20rem;
+    transition: 1s all;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.box1 div > span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.box1 .div-img > span p{
+    color: transparent;
+    height: 100%;
+    font-size: .80rem;
+}
+.box1 .div-img > span p:hover{
+    color: #ffffffbd;
+    
+}
+
+
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    height: 35rem;
+}
+.box3 .text{
+    width: 50%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.box3 .img{
+    width: 50%;
+    
+}
+.box3 .img img{
+    box-shadow: 5px 3px 6px #0000008f;
+}
+
+.somos{
+    width: 100%;
+    height: 10rem;
+    background-color: #c6d8f0;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.somos > div{
+    margin: 1rem;
+}
+
+.icon{
+    position:  fixed;
+    left: 95% ;
+    bottom: 5%;
+    transition: 3s all;
+    z-index: 1;
+}
+
+.icon-img{
+    /*animation: pulse 3s infinite linear; */
+    filter: drop-shadow(5px 5px 10px #00000017);
+    transition: 1s all;
+    
+}
+
+.icon-img:hover{
+    filter: none;
+    transform: rotateY(360deg);
+    
+}
+
+
+/*----------------------------*/
+.iconduvida {
+    z-index: 1;
+    position: fixed;
+    left: 95% ;
+    bottom: 12%;
+    
+}
+.iconduvida img:active{
+    transform: scale(0.80);
+    
+}
+.tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Ajuste a posição conforme necessário */
+    left: 50%;
+    margin-left: -70px; /* Centralizar */
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.iconduvida:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.boxButton{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 5px solid #0e0244;
+    background-color: #192374;
+    color: #fff;
+    transition: 0.50s linear all;
+    box-shadow: 2px 2px 10px #000;
+    letter-spacing: 0.10rem;
+    font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    
+}
+
+.boxButton:hover{
+    box-shadow: none;
+    background-color: #2332a3;
+}
+
+.boxButton:active{
+    border: none;
+    box-shadow: none;
+    background-color: #0a4eb4;
+}
+
+
+footer{
+    text-align: center;
+    
+}
+
+footer .contato{
+    margin-right: 20px;
+}
+footer .direitos-autorais {
+    margin-right: 20px;
+}
+
+.contato,
+.redes-sociais,
+.direitos-autorais {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .direitos-autorais{
+    color: #00000067;
+}
+
+
+h3{
+    font-size: 1.5rem;
+    color: #000;
+    text-transform: capitalize;
+    
+}
+
+/*-----------------*/
+
+
+@keyframes pulse {
+    0%{
+        transform: scale(.90);
+        
+        
+    }
+    25%{
+        transform: scale(1);
+        
+    }
+    50%{
+        transform: scale(.90);
+       
+    }
+}
+
+
+
