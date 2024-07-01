@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar{
-    background-color: #192374;
+    background-color: red;
     width: 10px;
 }
 
