@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar{
-    background-color: red;
+    background-color: #192374;
     width: 10px;
 }
 
@@ -212,7 +212,7 @@ main{
     letter-spacing: .05rem ;
     width:min-content ;
     width: 30rem;
-    
+    background-color: red;
     
 }
 
