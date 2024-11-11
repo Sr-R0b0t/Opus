@@ -560,40 +560,6 @@ p {
     margin: 1rem;
 }
 
-.icon{
-    position:  fixed;
-    left: 95% ;
-    bottom: 5%;
-    transition: 3s all;
-    z-index: 1;
-}
-
-.icon-img{
-    /*animation: pulse 3s infinite linear; */
-    filter: drop-shadow(5px 5px 10px #00000017);
-    transition: 1s all;
-    
-}
-
-.icon-img:hover{
-    filter: none;
-    transform: rotateY(360deg);
-    
-}
-
-
-/*----------------------------*/
-.iconduvida {
-    z-index: 1;
-    position: fixed;
-    left: 95% ;
-    bottom: 12%;
-    
-}
-.iconduvida img:active{
-    transform: scale(0.80);
-    
-}
 .tooltip {
     visibility: hidden;
     width: 100px;
@@ -693,6 +659,14 @@ h3{
     50%{
         transform: scale(.90);
        
+    }
+
+    75%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(.90);
     }
 }
 

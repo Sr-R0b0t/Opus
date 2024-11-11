@@ -74,15 +74,12 @@ header .nav-link:active{
     z-index: 1;
 }
 
+
 .icon-img{
+    animation: pulse 3s infinite;
     filter: drop-shadow(5px 5px 10px #00000017);
     transition: 1s all;
-    
-}
-
-.icon-img:hover{
-    filter: none;
-    transform: rotateY(360deg);
+    width: 3.60rem;
     
 }
 
@@ -93,12 +90,18 @@ header .nav-link:active{
     position: fixed;
     left: 95% ;
     bottom: 12%;
+}
+
+.iconduvida img {
+    width: 60px;
+    transition: 1s;
+}
+
+.iconduvida img:hover{
+    transform: scale(0.90);
     
 }
-.iconduvida img:active{
-    transform: scale(0.80);
-    
-}
+
 .tooltip {
     visibility: hidden;
     width: 100px;
@@ -197,7 +200,6 @@ h4,h3{
 }
 /*-----------------*/
 
-
 @keyframes pulse {
     0%{
         transform: scale(.90);
@@ -211,5 +213,13 @@ h4,h3{
     50%{
         transform: scale(.90);
        
+    }
+
+    75%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(.90);
     }
 }
