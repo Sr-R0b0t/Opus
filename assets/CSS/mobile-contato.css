@@ -1,3 +1,12 @@
+@media (max-width: 1100px) {
+    .icon{
+        left: 90% ;    
+    }
+    .iconduvida{
+        left: 90% ;
+    }
+}
+
 @media (max-width: 544px) {
     main{
         height: 82rem;
