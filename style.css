@@ -416,8 +416,7 @@ p {
     gap: 15px;
     justify-content: center;
     align-items: center;
-    
-    
+    height: 20rem;
 }
 .box_Servi h2{
     color: #192374;
@@ -440,56 +439,36 @@ p {
 .box1 div{
     height: 300px;
     width: 250px;
-    
-    
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    padding: .20rem;
 }
+
 .box1 div:hover{
+    background-blend-mode: soft-light;
+    background-color: #000000b7;
     margin-bottom: 1rem;
 }
 
 
 .box1 div:nth-child(1){
     background-image: url(./assets/images/Triagem.jfif);
-    overflow: hidden;
-    background-size: cover;
-    border-radius: 10px;
-    transition: 1s linear;
-    padding: .20rem;
 }
-
 
 .box1 div:nth-child(2){
     background-image: url(./assets/images/avaliação-comportamental.jfif);
-    overflow: hidden;
-    background-size: cover;
-    border-radius: 10px;
-    transition: 1s linear;
-    padding: .20rem;
 }
+
 .box1 div:nth-child(3){
     background-image: url(./assets/images/Intervenção.jfif);
-    overflow: hidden;
-    background-size: cover;
-    border-radius: 10px;
-    transition: 1s linear;
-    padding: .20rem;
 }
 
 .box1 div:nth-child(4){
-    background-image: url(./assets/images/Devolutiva.jfif);
-    overflow: hidden;
-    background-size: cover;
-    border-radius: 10px;
-    transition: 1s linear;
-    padding: .20rem;
-    
+    background-image: url(./assets/images/Devolutiva.jfif);    
 }
 
-.box1 div:hover{
-    background-blend-mode: soft-light;
-    background-color: #000000b7;
-    
-}
 
 .box1 .div-img > span{
     color: transparent;
