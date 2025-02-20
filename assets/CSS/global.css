@@ -159,6 +159,23 @@ footer .direitos-autorais{
     color: #00000067;
 }
 
+footer .convenios{
+    width: 100%;
+    border-top: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .convenios .img-convenio img{
+    width: 80px;
+    margin-left: .50rem;
+}
+footer .convenios .img-convenio:nth-child(17) img{
+    width: 60px;
+}
+
 .redes-sociais ul {
     list-style: none;
     margin: 0;
@@ -198,6 +215,7 @@ h4,h3{
     text-transform: capitalize;
     font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
 }
+
 /*-----------------*/
 
 @keyframes pulse {
