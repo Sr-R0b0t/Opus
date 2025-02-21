@@ -67,8 +67,8 @@ header .nav-link:active{
 
 
 .icon{
-    position:  fixed;
-    left: 95% ;
+    position: fixed;
+    left: 95%;
     bottom: 5%;
     transition: 3s all;
     z-index: 1;
@@ -90,6 +90,7 @@ header .nav-link:active{
     position: fixed;
     left: 95% ;
     bottom: 12%;
+    transition: 3s all;
 }
 
 .iconduvida img {

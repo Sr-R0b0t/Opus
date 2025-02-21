@@ -2,10 +2,8 @@
     main{
         text-align: center;
         flex-direction: column;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
         padding: 0;
-        height: 80rem;
-        
     }
     .box-text{
         width: 100%;
@@ -17,9 +15,7 @@
     .box_Servi{
         padding: 1rem;
         width: 100%;
-        height: 25rem;
         justify-content: start;
-        
     }
     .box_Servi .box1{
         display: flex;
@@ -27,8 +23,7 @@
         align-items: center;
         flex-direction: row;
         width: 100%;
-        height: 50rem;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
     }
 
     .cards{
@@ -58,16 +53,9 @@
         height: 400px;
 
     }
-    .icon{
-        left: 90% ;
-        
-    }
-
-    .iconduvida{
-        left: 90% ;
-    }
+  
     .box-slider{
-        padding: 0 0.10rem;
+        padding: 0 0 .10rem;
     }
     .slider{
         width: 100%;
@@ -93,48 +81,21 @@
     }
 }
 
-@media (max-width: 1469px) {
-    .somos{
-        height: 13rem;   
-    }
-}
 
 @media (max-width: 1146px) {
-    .box3{
-        height: 36rem;
+    .iconduvida{
+        left: 92%;
     }
-    .box3 .text{
-        height: 35rem;
-    }
-}
-
-@media (max-width: 1327px) {
-    main{
-        height: 105rem;
+    .icon{
+        left: 92%;
     }
 }
 
-@media (max-width: 1253px) {
-    .box3{
-        height: 36rem;
-    }
-    .box3 .text{
-        height: 35rem;
-    }
-}
-
-@media (max-width: 1126px){
-    main{
-        margin-bottom: 0;
-        height: 110rem;
-    }
-} 
 
 @media (max-width: 1100px) {
     main{
         text-align: center;
         flex-direction: column;
-        margin-bottom: 0;
         padding: 0;
     }
 
@@ -148,10 +109,8 @@
     .box_Servi{
         padding: 1rem;
         width: 100%;
-        height: 25rem;
         margin-bottom: 0rem;
         justify-content: start;
-        
     }
    
 
@@ -170,22 +129,18 @@
         
     }
         
-    .icon{
-        left: 90% ;
-        
-    }
+   
     .icon-img{
         width: 50px;
         animation: pulse 3s infinite linear;
         filter: drop-shadow(5px 5px 10px #00000017);
         transition: 1s all;
     }
-    .iconduvida{
-        left: 90% ;
+
+    .icon{
+        bottom: 6%;   
     }
-    .box-slider{
-        padding: 0 0.10rem;
-    }
+   
     .slider{
         width: 100%;
         height: 80%;
@@ -210,10 +165,7 @@
     }
 }
 
-@media (max-width: 1076px){
-    .box_Servi{
-        height: 50rem;
-    }
+@media (max-width: 1086px){
     .box_Servi .box1{
         display: flex;
         justify-content: center;
@@ -236,21 +188,16 @@
     }
     
 }
-
-@media (max-width: 995px){
-    main{
-        height: 140rem;
-        margin-bottom: 0rem;
-    }
-} 
-
-
+@media (max-width: 1076px){
+    .box_Servi .box1{
+        height: 40rem;
+}
+}
 
 @media (max-width: 768px) {
     main{
         text-align: center;
         flex-direction: column;
-        margin-bottom: 1rem;
         padding: 0;
     }
 
@@ -291,19 +238,14 @@
         height: 350px;
 
     }
-    .icon{
-        left: 90% ;
-        
-    }
+
     .icon-img{
         width: 50px;
         animation: pulse 3s infinite linear;
         filter: drop-shadow(5px 5px 10px #00000017);
         transition: 1s all;
     }
-    .box-slider{
-        padding: 0 0.10rem;
-    }
+    
     .slider{
         width: 100%;
         height: 80%;
@@ -329,19 +271,11 @@
 }
 
 
-@media (max-width: 683px){
-    main{
-        height: 145rem;
-    }
-} 
-
 @media (max-width: 663px) {
     main{
         text-align: center;
         flex-direction: column;
-        margin-bottom: 0rem;
         padding: 0;
-        height: 220rem;
     }
 
     .box-text{
@@ -381,7 +315,6 @@
 
     }
     .icon{
-        left: 90% ;
         bottom: 1%;
     }
     .icon-img{
@@ -395,9 +328,6 @@
         bottom: 7%;
     }
 
-    .box-slider{
-        padding: 0 0.10rem;
-    }
     .slider{
         width: 100%;
         height: 80%;
@@ -428,6 +358,7 @@
     }
     .box3 .text{
         height: 60rem;
+        
     }
     .somos{
         flex-wrap: wrap;
@@ -435,7 +366,29 @@
         height: 25rem;
         padding: 1rem;
     }
-   
+    .icon{
+        left: 90%;
+    }
+    .iconduvida{
+        left: 90%;
+    }
+}
+
+@media (max-width: 556px){
+    
+    .icon{
+        left: 88%;
+    }
+    .iconduvida{
+        left: 88%;
+    }
+    .somos{
+        height: 30rem;
+    }
+    .box_Servi{
+        margin-bottom: 5rem;
+    }
+    
 }
 
 @media (max-width: 546px){
@@ -443,44 +396,8 @@
         height: 90rem;
     }
     .box_Servi .box1{
-        height: 85rem;
+        height: 100rem;
     }
-    .icon{
-        left: 85%;
-    }
-    .iconduvida{
-        left: 85%;
-    }
-}
-
-@media (max-width: 639px){
-    main{
-        height: 225rem;
-    }
-}
-
-@media (max-width: 602px){
-    main{
-        height: 225rem;
-    }
-} 
-@media (max-width: 519px){
-    main{
-        height: 230rem;
-    }
-} 
-
-@media (max-width: 486px) {
-    .box3{
-        height: 75rem;
-    }
-}
-
-@media (max-width: 462px) {
-    main{
-        height: 235rem;
-    }
-    
 }
 
 @media (max-width: 422px) {
@@ -493,73 +410,54 @@
     .somos{
         flex-wrap: wrap;
         place-content: center center;
-        height: 30rem;
         padding: 1rem;
+        height: 32rem;
+    }
+    .icon{
+        left: 84%;
+    }
+    .iconduvida{
+        left: 84%;
     }
    
 }
 
 
-@media (max-width: 411px) {
-    main{
-        height: 240rem;
-    }
-    
-}
-@media (max-width: 361px) {
-    .box3{
-        height: 90rem;
-    }
-    .box3 .text{
-        height: 85rem;
-    }
-    .somos{
-        flex-wrap: wrap;
-        place-content: center center;
-        height: 30rem;
-        padding: 1rem;
-        
-    }
-   
-}
-
-
-@media (max-width: 357px) {
-    main{
-        height: 245rem;
-    }
-}
-@media (max-width: 345px) {
-    main{
-        height: 250rem;
-    }
-    
-}
 
 @media (max-width: 328px) {
     .box3{
-        height: 95rem;
+        
     }
     .box3 .text{
-        height: 80rem;
+        
     }
+    .box_Servi{
+        height: 95rem;
+        margin-bottom: 4rem;
+    }
+
     .somos{
         flex-wrap: wrap;
         place-content: center center;
-        height: 35rem;
         padding: 1rem;
+        height: 36rem;
+    }
+
+    .icon{
+        left: 82%;
+    }
+    .iconduvida{
+        left: 82%;
     }
    
 }
 
-@media (max-width: 312px) {
-    main{
-        height: 255rem;
-        margin-bottom: 2rem;
+@media (max-width: 290px) {
+    .somos{
+        flex-wrap: wrap;
+        place-content: center center;
+        padding: 1rem;
+        height: 38rem;
     }
-}
-@media (max-width: 292px) {
-    main{
-        height: 260rem;
-    }
+   
 }
