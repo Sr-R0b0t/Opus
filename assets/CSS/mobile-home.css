@@ -79,6 +79,12 @@
     footer{
         margin-top: 10rem;
     }
+    .icon{
+        bottom: 2%;
+    }
+    .iconduvida{
+        bottom: 12%;
+    }
 }
 
 
@@ -138,7 +144,7 @@
     }
 
     .icon{
-        bottom: 6%;   
+        bottom: 4.5%;
     }
    
     .slider{
@@ -422,15 +428,7 @@
    
 }
 
-
-
 @media (max-width: 328px) {
-    .box3{
-        
-    }
-    .box3 .text{
-        
-    }
     .box_Servi{
         height: 95rem;
         margin-bottom: 4rem;
