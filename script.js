@@ -27,5 +27,6 @@ const sr = ScrollReveal({
 sr.reveal({}); 
 sr.reveal('.box-text', { delay: 400, origin: 'left' }); 
 sr.reveal('.box-card, .box_Servi',{ interval: 200, origin: 'bottom' }); 
+sr.reveal('.div-img',{ interval: 400, origin: 'bottom' }); 
 sr.reveal('.box3',{delay: 400, origin: 'left' });
 sr.reveal('.img',{delay: 400, origin: 'bottom' });

@@ -81,9 +81,10 @@ main a:visited:active{
     width: 50px;
 }
 
+
 .rede-social .social{
     margin-left: 1rem;
-    
+
 }
 
 .img-instagram{
@@ -116,12 +117,10 @@ main a:visited:active{
 
 #location{
     width: 100%;
-    height: 30rem;
     margin-top: 5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 
 #location h2{
@@ -161,13 +160,12 @@ main a:visited:active{
 
 .operation{
     width: 100%;
-    height: 7rem;
     margin-top: 1.50rem;
     text-align: center;
 }
 
 footer{
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 
