@@ -27,16 +27,19 @@ body{
     width: 100%;
     height: 100vh;
     background-color: var(--cor-principal);
+    
 }
 
 header{
     box-shadow: 5px 4px 10px #000000a6;
     position: relative;
+    background-color: #121212;
 }
 
-.header-box{
-    background-color: #ffffaa;
+header h2{
+    color: #8cb0ff;
 }
+
 
 header  button:hover{
     background-color: #346ec5;
@@ -46,23 +49,26 @@ header  button:active{
 }
 
 header .nav-link{
-    color: #000;
-    transition: 0.10s all linear;
+    color: rgba(255, 255, 255, 0.74);
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+header .active{
+    color: white !important;
 }
 
 header .nav-link:hover{
-    color: #0b58cc;
-    font-weight: bolder;
+    color: #5d8bfa;
+    position: relative;
+    bottom: 1px;
 }
 
-header .nav-link:active{
-    color: #ffff00;
-}
 
 .logo-opus{
     width: 50px;
     transform: scale(1.4);
-    
+    margin-right: 1rem;
 }
 
 
